@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-keur
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0050-tenant/cin4s-839-0050-app/devfile-sample-keur@sha256:f970d433f43f6d85633c9538c80f046e9f096ebf4db9eed6a6279372526e2df7
+        name: my-nodejs
+        resources: {}
+status: {}
